@@ -3,7 +3,7 @@
 @import 'footerStyle';
 @import 'headerStyle';
 @import 'mediaStyle';
-@import 'catalog_style';
+@import 'productStyle';
 
 * {
     margin: 0;
@@ -220,12 +220,9 @@ body{
 }
 
 .item:hover .item__add_to_cart{
-    filter: opacity(86%)
-}
+        filter: opacity(86%)
+    }
 
-.item__add_to_cart:hover .item__add_to_cart{
-    fill: $colorSelectSite;
-}
 
 .browse_button{
     margin-top: 60px;
