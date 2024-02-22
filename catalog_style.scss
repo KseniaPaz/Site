@@ -1,29 +1,64 @@
 @import 'vars';
+@import 'mixins';
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
 }
 
-
-.top-head__heading{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $colorSelectSite;
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
 }
 
-.breadcrumbs__link{
+.header {
+    background-color: $colorBackBlock;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+}
+
+.top {
+    &-head {
+        background-color: #F8F3F4;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-head__heading {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorSelectSite;
+    }
+}
+
+.breadcrumbs__link {
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
@@ -32,7 +67,55 @@ body{
     color: #636363;
 }
 
-.breadcrumbs__link_site{
+.breadcrumbs__link_site {
     font-weight: 700;
     color: $colorSelectSite;
 }
+
+.product-box {
+    @include centerFlex();
+    gap: $gapGrid;
+}
+
+.product {
+    width: $thirdSite;
+    display: flex;
+    flex-direction: column;
+    
+    &__image {
+        width: 100%;
+    }
+    &__content {
+        width: $thirdSite;
+        padding: 24px 16px;
+        background-color: #F8F8F8;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__name {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+    &__price {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorSelectSite;
+    }
+}
+
