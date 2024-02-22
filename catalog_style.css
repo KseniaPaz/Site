@@ -128,24 +128,6 @@
   fill: #F16D7F;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
-}
-
 .header {
   background-color: #222;
   padding-bottom: 20px;
@@ -163,6 +145,24 @@ body {
   display: flex;
   align-items: center;
   gap: 41px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
 
 .top-head {
@@ -221,6 +221,7 @@ body {
 .main-product {
   margin-left: 27px;
   margin-right: 27px;
+  margin-bottom: 128px;
   padding-bottom: 64px;
   border: 1px solid #EAEAEA;
   display: flex;

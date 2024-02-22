@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'footerStyle';
+@import 'headerStyle';
 
 * {
     margin: 0;
@@ -18,27 +19,6 @@ body {
 .center {
     padding-left: calc(50% - $widthSite / 2);
     padding-right: calc(50% - $widthSite / 2);
-}
-
-.header {
-    background-color: $colorBackBlock;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__left {
-        display: flex;
-        align-items: center;
-        gap: 41px;
-    }
-
-    &__right {
-        display: flex;
-        align-items: center;
-        gap: 41px;
-    }
 }
 
 .top {
@@ -103,6 +83,7 @@ body {
 .main-product {
     margin-left: ($widthSite - 1086px) / 2;
     margin-right: ($widthSite - 1086px) / 2;
+    margin-bottom: 128px;
     padding-bottom: 64px;
     border: 1px solid #EAEAEA;
     @include centerFlex();
