@@ -27,21 +27,27 @@ body{
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
 
-    &_image{
+    &__image{
         max-width: 664px;
     }
 }
 
-.brand_title{
+.brand{
+    padding-left: 10px;
+    width: 405px;
+    height: 93px;
+    border-left: 12px solid $colorSelectSite;
+    gap: 16px;
+    box-sizing: border-box;
+    &__title{
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     letter-spacing: 0em;
     text-align: left;
     color: #222222;
-}
-
-.lux{
+    }
+    &__lux{
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
@@ -49,24 +55,10 @@ body{
     text-align: left;
     font-family: Lato;
     color: #222222;
-}
-
-h2 span{
-    color: $colorSelectSite;
-}
-
-.brand{
-    height: 93px;
-    gap: 16px;
-
-    &_text{
-        padding-left: 28px;
-        width: 380px;
     }
-}
-
-.rectangle{
-    position: absolute;
+    h2 span{
+    color: $colorSelectSite;
+    }
 }
 
 .offer{
@@ -76,12 +68,10 @@ h2 span{
     justify-content: center;
     padding-top: 65px;
     padding-bottom: 96px;
-
-    &_item{
+    &__item{
         position: relative;
     }
-
-    &_text{
+    &__text{
         position: absolute;
         width: 360px;
         height: 260px;
@@ -91,8 +81,7 @@ h2 span{
         align-items: center;
         bottom: 1%; 
     }
-
-    &_offer{
+    &__offer{
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -100,8 +89,7 @@ h2 span{
         text-align: center;
         color: #FFFFFF;
     }
-
-    &_title{
+    &__title{
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
@@ -109,12 +97,10 @@ h2 span{
         text-align: center;
         color: $colorSelectSite;
     }
-
-    &_item_big{
+    &__item_big{
         position: relative;
     }
-
-    &_text_big{
+    &__text_big{
         position: absolute;
         bottom: 1%;
         width: 1142px;
@@ -125,56 +111,49 @@ h2 span{
         align-items: center;
         grid-column: span 3;
     }
-
-    &_offer_big{
+    &__offer_big{
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
         color: #FFFFFF;
     }
-    
-    &_title_big{
+    &__title_big{
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
         color: $colorSelectSite;
     }
-}
-
-.image{
-    opacity: 86%;
-    filter: brightness(30%);
-
-    &_big{
+    &__image{
+        opacity: 86%;
+        filter: brightness(30%);
+    }
+    &__image_big{
         display: grid;
         justify-content: center;
         grid-column: span 3;
         filter: brightness(30%);
-    }
+    }  
 }
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.heading{
+    &__heading{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
     padding-bottom: 48px;
-}
-
-.title{
-    color: #222;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    &_text{
+    }
+    &__title{
+        color: #222;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__title_text{
         color: #9F9F9F;
         font-size: 14px;
         font-style: normal;
@@ -194,8 +173,7 @@ h2 span{
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-
-    &_content{
+    &__content{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -206,45 +184,41 @@ h2 span{
         padding-right: 16px;
     
     }
-    
-    &_title{
+    &__title{
         color: #000;
         font-size: 13px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
-}
-
-.add_to_cart{
+    &__add_to_cart{
     position: absolute;
     top: 188px;
     right: 110px;
     filter: opacity(0);
-}
-
-.text{
+    }
+    &__text{
     color: #5D5D5D;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    }
+    &__price{
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
-.price{
-    color: $colorSelectSite;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.item:hover .item_image{
+.item:hover .item__image{
     filter: opacity(86%)
     brightness(20%)
 }
 
-.item:hover .add_to_cart{
+.item:hover .item__add_to_cart{
     filter: opacity(86%)
 }
 
@@ -269,41 +243,43 @@ h2 span{
     background-color: $colorSelectSite;
 }
 
-.info_section{
-    padding-top: 103px;
-    padding-bottom: 104px;
-    padding-left: calc(50% - 573px);
-    padding-right: calc(50% - 573px);
-    background-color: #222224;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
+.info{
+    &_section{
+        padding-top: 103px;
+        padding-bottom: 104px;
+        padding-left: calc(50% - 573px);
+        padding-right: calc(50% - 573px);
+        background-color: #222224;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.info_article{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
+    &_article{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
 
-.info_heading{
-    padding-top: 28px;
-    padding-bottom: 16px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FBFBFB;
-}
+    &_heading{
+        padding-top: 28px;
+        padding-bottom: 16px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FBFBFB;
+    }
 
-.info_text{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FBFBFB;
+    &_text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FBFBFB;
+    }
 }
