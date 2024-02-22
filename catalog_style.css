@@ -66,6 +66,28 @@ body {
   color: #F16D7F;
 }
 
+.slider {
+  background-color: #F7F7F7;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__image {
+  width: 597px;
+}
+.slider__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.1490196078);
+}
+.slider__button:hover path {
+  fill: #F16D7F;
+}
+
 .product-box {
   display: flex;
   justify-content: center;

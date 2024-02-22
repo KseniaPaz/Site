@@ -72,6 +72,28 @@ body {
     color: $colorSelectSite;
 }
 
+.slider {
+    background-color: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__image {
+        width: 597px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 47px;
+        height: 47px;
+        background-color: #2A2A2A26;
+    }
+    &__button:hover path{
+        fill: $colorSelectSite;
+    }
+}
+
 .product-box {
     @include centerFlex();
     gap: $gapGrid;
