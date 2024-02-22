@@ -744,6 +744,20 @@ body {
   color: #F16D7F;
 }
 
+.slider {
+  position: relative;
+}
+
+.main-product {
+  width: 1086px;
+  position: absolute;
+  top: 935px;
+}
+
+.product-box {
+  margin-top: 700px;
+}
+
 * {
   margin: 0;
   padding: 0;
