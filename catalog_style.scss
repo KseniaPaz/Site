@@ -1,0 +1,38 @@
+@import 'vars';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.top-head__heading{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $colorSelectSite;
+}
+
+.breadcrumbs__link{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #636363;
+}
+
+.breadcrumbs__link_site{
+    font-weight: 700;
+    color: $colorSelectSite;
+}
