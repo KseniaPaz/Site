@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'mixins';
+@import 'footerStyle';
 
 * {
     margin: 0;
@@ -32,6 +33,7 @@ body {
         align-items: center;
         gap: 41px;
     }
+
     &__right {
         display: flex;
         align-items: center;
@@ -48,6 +50,7 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+
     &-head__heading {
         font-size: 24px;
         font-weight: 400;
@@ -78,9 +81,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &__image {
         width: 597px;
     }
+
     &__button {
         display: flex;
         align-items: center;
@@ -89,10 +94,123 @@ body {
         height: 47px;
         background-color: #2A2A2A26;
     }
-    &__button:hover path{
+
+    &__button:hover path {
         fill: $colorSelectSite;
     }
 }
+
+.main-product {
+    margin-left: ($widthSite - 1086px) / 2;
+    margin-right: ($widthSite - 1086px) / 2;
+    padding-bottom: 64px;
+    border: 1px solid #EAEAEA;
+    @include centerFlex();
+    flex-direction: column;
+    background-color: #FFFFFF;
+
+    &__description {
+        border-bottom: 1px solid #EAEAEA;
+        width: 642px;
+        padding: 64px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorSelectSite;
+    }
+
+    &__heading {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+
+    &__text {
+        margin-top: 45px;
+        margin-bottom: 32px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $colorText;
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorSelectSite;
+    }
+
+    &__choice-box {
+        padding-top: 64px;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+    }
+
+    &__parameter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__parameter-heading {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        width: 212px;
+        height: 49px;
+        background-color: #FFFFFF;
+        border-color: $colorSelectSite;
+        color: $colorSelectSite;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    &__button:hover {
+        color: white;
+        background-color: $colorSelectSite;
+    }
+
+    &__button:hover path {
+        fill: white;
+    }
+}
+
+
+
+
 
 .product-box {
     @include centerFlex();
@@ -103,10 +221,11 @@ body {
     width: $thirdSite;
     display: flex;
     flex-direction: column;
-    
+
     &__image {
         width: 100%;
     }
+
     &__content {
         width: $thirdSite;
         padding: 24px 16px;
@@ -115,6 +234,7 @@ body {
         flex-direction: column;
         gap: 16px;
     }
+
     &__name {
         font-size: 13px;
         font-weight: 400;
@@ -123,6 +243,7 @@ body {
         text-align: left;
         color: $colorTitleText;
     }
+
     &__text {
         font-size: 14px;
         font-weight: 300;
@@ -131,6 +252,7 @@ body {
         text-align: left;
         color: $colorText;
     }
+
     &__price {
         font-size: 16px;
         font-weight: 400;
@@ -140,4 +262,3 @@ body {
         color: $colorSelectSite;
     }
 }
-
