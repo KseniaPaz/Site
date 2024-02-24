@@ -1,0 +1,13 @@
+@import 'vars';
+
+
+.catalog-box {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: $gapGrid;
+    padding-bottom: 48px;
+}
+
+
+

@@ -4,6 +4,8 @@
 @import 'headerStyle';
 @import 'mediaStyle';
 @import 'productStyle';
+@import 'catalogStyle';
+@import 'filter';
 
 * {
     margin: 0;
@@ -284,4 +286,7 @@ body{
         text-align: center;
         color: #FBFBFB;
     }
+
 }
+
+

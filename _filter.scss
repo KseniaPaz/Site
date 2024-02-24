@@ -1,0 +1,58 @@
+summary  {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter-sort {
+    height: 132px;
+    position: relative;
+}
+
+.filter{
+    position: absolute;
+    top: 39px;
+    padding: 13px 16px 16px;
+    width: 360px;
+    box-sizing: border-box;
+
+    &[open] {
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba (0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__heading {
+        color: $colorSelectSite;
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &__heading {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleTex;
+    }
+    &__item {
+        margin-top: 16px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+}
