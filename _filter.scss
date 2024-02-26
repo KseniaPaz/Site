@@ -1,4 +1,4 @@
-summary  {
+summary {
     display: block;
 }
 
@@ -9,18 +9,30 @@ summary::-webkit-details-marker {
 .filter-sort {
     height: 132px;
     position: relative;
+    display: flex;
+    gap: $gapGrid;
+    padding-top: 39px;
+    box-sizing: border-box;
 }
 
-.filter{
-    position: absolute;
-    top: 39px;
-    padding: 13px 16px 16px;
+.filter {
     width: 360px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    padding-top: 13px;
+
+    &__content {
+        background-color: #ffffff;
+        padding-top: 0;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
 
     &[open] {
-        background: #ffffff;
-        box-shadow: 6px 4px 35px rgba (0, 0, 0, 0.21);
+        background-color: #ffffff;
+        box-shadow: 6px 4px 35px 0px #00000036;
     }
 
     &[open] .filter__heading {
@@ -35,18 +47,22 @@ summary::-webkit-details-marker {
         display: flex;
         align-items: center;
         gap: 11px;
+        padding-left: 16px;
     }
+
     &__heading {
         font-size: 14px;
         font-weight: 600;
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        color: $colorTitleTex;
+        color: $colorTitleText;
     }
+
     &__item {
         margin-top: 16px;
     }
+
     &__title {
         font-size: 14px;
         font-weight: 400;
@@ -54,5 +70,81 @@ summary::-webkit-details-marker {
         letter-spacing: 0em;
         text-align: left;
         color: $colorText;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px #EBEBEB $colorText;
+        border-left: 5px solid $colorSelectSite;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6F6E6E;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-bottom: 24px;
+        padding-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.filter__item[open] .filter__title {
+    color: $colorSelectSite;
+}
+
+.sort {
+    display: flex;
+    gap: 18px;
+    padding-top: 12px;
+    &__details{
+        position: relative;
+        z-index: 1;
+    }
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__heading {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: $colorText;
+        background-color: #ffffff;
+        box-shadow: 6px 4px 35px 0px #00000036;
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -9px;
+        top: 22px;
+        
+    }
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 }
