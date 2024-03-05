@@ -11,7 +11,6 @@ input[type='number']::-webkit-outer-spin-button {
     padding-bottom: 128px;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 128px;
 
     &__items {
@@ -112,17 +111,130 @@ input[type='number']::-webkit-outer-spin-button {
         border: 1px solid #A4A4A4;
     }
 
-    &__forms {
+    &__button:hover {
+        background-color: $colorSelectSite;
+        color: #FFFFFF;
+    }
+}
+
+.shopping-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    
+
+    &__form {
         width: 360px;
         display: flex;
         flex-direction: column;
-        border: 3px solid #00000021;
+        gap: 20px;
     }
 
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+    }
+
+    &__adress {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+        padding-top: 13px;
+        padding-bottom: 16px;
+        padding-left: 17px;
+        padding-right: 17px;
+
+    }
+
+    &__button {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: $colorTitleText;
+        background-color: #FFFFFF;
+        border: 1px solid #A4A4A4;
+    }
+
+    &__button:hover {
+        background-color: $colorSelectSite;
+        color: #FFFFFF;
+    }
 
 }
 
-.shopping-cart__button:hover {
-    background-color: $colorSelectSite;
-    color: #FFFFFF;
+.total-form {
+    width: 360px;
+    background-color: #F5F3F3;
+    padding-top: 39px;
+    padding-bottom: 42px;
+
+    &__text {
+        margin-bottom: 12px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $colorText;
+        &_span {
+            margin-right: 34px;
+            padding-left: 30px;
+        }
+
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $colorText;
+        &_span {
+            margin-right: 37px;
+            padding-left: 30px;
+            font-weight: 700;
+            color: $colorSelectSite;
+        }
+    }
+
+    &__svg {
+        margin-left: 43px;
+        margin-right: 43px;
+        margin-top: 21px;
+    }
+
+    &__button {
+        width: 275px;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $colorSelectSite;
+        border: 1px solid $colorSelectSite;
+        margin-left: 43px;
+        margin-right: 43px;
+        margin-top: 17px;
+    }
+
+    &__button:hover {
+        background-color: #f0556a
+    }
 }
