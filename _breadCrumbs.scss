@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    &__li:not(:last-child)::after {
+        content: '/';
+        color: $colorText;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0px 8px;
+        
+    }
+
+    &__li:last-child {
+        font-weight: bold;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #636363;
+    }
+    &__link_site {
+        color: $colorSelectSite;
+    }
+}
