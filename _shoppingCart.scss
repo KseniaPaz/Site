@@ -1,0 +1,128 @@
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.shopping-cart {
+    background-color: #ffff;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__product {
+        border: 1px solid #EAEAEA;
+        box-shadow: 17px 19px 24px 0px #00000021;
+        display: flex;
+        justify-content: space-between;
+        width: 652px;
+    }
+
+    &__image {
+        width: 262px;
+    }
+
+    &__description {
+        max-width: 262px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+        margin-bottom: 42px;
+    }
+
+    &__param {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+        margin-bottom: 6px;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+        padding-left: 6px;
+    }
+
+    &__quantity {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorText;
+    }
+
+    &__number {
+        text-align: center;
+        width: 30px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-align: left;
+        color: $colorText;
+        padding-left: 16px;
+    }
+
+    &__x {
+        margin-top: 22px;
+        margin-right: 22px;
+        margin-left: 86px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        margin-bottom: 128px;
+    }
+
+    &__button {
+        padding: 16px 40px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+        background-color: #FFFFFF;
+        border: 1px solid #A4A4A4;
+    }
+
+    &__forms {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #00000021;
+    }
+
+
+}
+
+.shopping-cart__button:hover {
+    background-color: $colorSelectSite;
+    color: #FFFFFF;
+}
