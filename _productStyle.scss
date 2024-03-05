@@ -1,21 +1,3 @@
-@import 'vars';
-@import 'mixins';
-@import 'footerStyle';
-@import 'headerStyle';
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
 .center {
     padding-left: calc(50% - $widthSite / 2);
     padding-right: calc(50% - $widthSite / 2);

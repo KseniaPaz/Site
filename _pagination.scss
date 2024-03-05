@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+    &__box {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 284px;
+        border: 1px solid #EBEBEB;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: #EBEBEB;
+
+        &_arrow {
+            color: #000000;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        &_active {
+            color: $colorSelectSite;
+        }
+
+    }
+    &__li:hover .pagination__link {
+        color: $colorSelectSite;
+    }
+}
