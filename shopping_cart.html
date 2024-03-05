@@ -35,12 +35,9 @@
         </div>
 
     </header>
-
-
     <div class="top-head center">
         <h2 class="top-head__heading">SHOPPING CART </h2>
     </div>
-
     <div class="shopping-cart center">
         <div class="shopping-cart__items">
             <div class="shopping-cart__product">
@@ -82,24 +79,27 @@
                 <button class="shopping-cart__button">CONTINUE SHOPPING</button>
             </div>
         </div>
-        <div class="shopping-cart__forms">
-            <form action="" method="get">
-                <h2>SHIPPING ADRESS</h2>
-                <input type="text" placeholder="Country" value="Bangladesh" required>
-                <input type="text" placeholder="State" required>
-                <input type="text" placeholder="Postcode / Zip" required>
+        <div class="shopping-forms">
+            <form class="shopping-forms__form" action="" method="get">
+                <h2 class="shopping-forms__title">SHIPPING ADRESS</h2>
+                <input class="shopping-forms__adress" type="text" placeholder="Country" value="Bangladesh" required>
+                <input class="shopping-forms__adress" type="text" placeholder="State" required>
+                <input class="shopping-forms__adress" type="text" placeholder="Postcode / Zip" required>
                 <div>
-                    <button type="submit">GET A QUOTE</button>
+                    <button class="shopping-forms__button" type="submit">GET A QUOTE</button>
                 </div>
             </form>
-
+            <div class="total-form">
+                <p class="total-form__text">SUB TOTAL<span class="total-form__text total-form__text_span">$900</span>    </p>
+                <h2 class="total-form__title">GRAND TOTAL<span class="total-form__title total-form__title_span">$900</span></h2>
+                <svg class="total-form__svg" width="275" height="1" viewBox="0 0 275 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M275 0H0V1H275V0Z" fill="#E2E2E2"/>
+                    </svg>
+                <button class="total-form__button">PROCEED TO CHECKOUT</button>  
+            </div>
         </div>
-
-
-
     </div>
 
 
 </body>
-
 </html>
