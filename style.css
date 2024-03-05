@@ -992,7 +992,6 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-between;
   align-items: center;
   margin-top: 32px;
-  margin-bottom: 128px;
 }
 .shopping-cart__button {
   padding: 16px 40px;
@@ -1115,7 +1114,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 17px;
 }
 .total-form__button:hover {
-  background-color: #f0556a;
+  filter: brightness(70%);
 }
 
 * {

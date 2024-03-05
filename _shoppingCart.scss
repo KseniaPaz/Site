@@ -96,7 +96,6 @@ input[type='number']::-webkit-outer-spin-button {
         justify-content: space-between;
         align-items: center;
         margin-top: 32px;
-        margin-bottom: 128px;
     }
 
     &__button {
@@ -235,6 +234,6 @@ input[type='number']::-webkit-outer-spin-button {
     }
 
     &__button:hover {
-        background-color: #f0556a
+        filter: brightness(70%);
     }
 }
