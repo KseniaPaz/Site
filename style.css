@@ -905,6 +905,119 @@ summary::-webkit-details-marker {
   text-align: left;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopping-cart {
+  background-color: white;
+  padding-top: 96px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 128px;
+}
+.shopping-cart__items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.shopping-cart__product {
+  border: 1px solid #EAEAEA;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.1294117647);
+  display: flex;
+  justify-content: space-between;
+  width: 652px;
+}
+.shopping-cart__image {
+  width: 262px;
+}
+.shopping-cart__description {
+  max-width: 262px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.shopping-cart__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 42px;
+}
+.shopping-cart__param {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5D5D5D;
+  margin-bottom: 6px;
+}
+.shopping-cart__price {
+  color: #F16D7F;
+  padding-left: 6px;
+}
+.shopping-cart__quantity {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5D5D5D;
+}
+.shopping-cart__number {
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: left;
+  color: #5D5D5D;
+  padding-left: 16px;
+}
+.shopping-cart__x {
+  margin-top: 22px;
+  margin-right: 22px;
+  margin-left: 86px;
+}
+.shopping-cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 128px;
+}
+.shopping-cart__button {
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+.shopping-cart__forms {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(0, 0, 0, 0.1294117647);
+}
+
+.shopping-cart__button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
