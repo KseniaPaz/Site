@@ -1,0 +1,124 @@
+.registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &__form {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $colorTitleText;
+    }
+
+    &__paragraph {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-top: 13px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &__radio-box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__radiobuttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__radio-name {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: left;
+        color: $colorText;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #B1B1B1;
+    }
+
+    &__button {
+        width: 167px;
+        padding: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $colorSelectSite;
+        border: 1px solid $colorSelectSite;
+    }
+
+    &__button:hover {
+        filter: brightness(70%);
+    }
+
+    &__button-svg {
+        margin-left: 20px;
+    }
+
+
+}
+
+.loyalty-program {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 652px;
+    box-sizing: border-box;
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        color: $colorTitleText;
+    }
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        color: $colorTitleText;
+    }
+    &__list-item {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        color: $colorTitleText;
+    }
+    &__list-item::before {
+        content: url(img/vector_list.svg);
+        margin-right: 22px;
+    }
+}
