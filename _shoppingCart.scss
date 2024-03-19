@@ -271,3 +271,78 @@ input[type='number']::-webkit-outer-spin-button {
         }
     }
 }
+
+@media (max-width: 767px) {
+    .shopping-cart {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-bottom: 96px;
+        padding-top: 39px;
+
+        &__product {
+            width: 358px;
+            height: 188px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__image {
+            width: 144px;
+            height: 188px;
+            margin-right: 17px;
+        }
+
+        &__description {
+            margin-right: 32px;
+            margin-top: 13px;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+
+        &__param {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__quantity {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__x {
+            width: 10px;
+            height: 11px;
+            margin-left: 4px;
+        }
+
+        &__buttons {
+            justify-content: center;
+            gap: 9px;
+            
+        }
+        &__button {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 9px 19px;
+        }
+
+        &__number {
+            font-size: 10px;
+            line-height: 12px;
+            width: 24px;
+            height: 15px;
+            margin-left: 15px;
+        }
+
+        .shopping-forms {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
