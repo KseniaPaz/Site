@@ -914,6 +914,32 @@ input[type=number]::-webkit-outer-spin-button {
   filter: brightness(70%);
 }
 
+@media (max-width: 1024px) {
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .shopping-cart__product {
+    width: 734px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .shopping-cart__image {
+    margin-right: 41px;
+  }
+  .shopping-cart__x {
+    margin-left: 204px;
+  }
+  .shopping-cart__buttons {
+    justify-content: center;
+    gap: 48px;
+  }
+  .shopping-cart .shopping-forms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 ul {
   list-style-type: none;
 }

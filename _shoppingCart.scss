@@ -1,5 +1,5 @@
-input[type='number']::-webkit-inner-spin-button, 
-input[type='number']::-webkit-outer-spin-button { 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -120,7 +120,7 @@ input[type='number']::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 57px;
-    
+
 
     &__form {
         width: 360px;
@@ -189,6 +189,7 @@ input[type='number']::-webkit-outer-spin-button {
         letter-spacing: 0em;
         text-align: right;
         color: $colorText;
+
         &_span {
             margin-right: 34px;
             padding-left: 30px;
@@ -203,6 +204,7 @@ input[type='number']::-webkit-outer-spin-button {
         letter-spacing: 0em;
         text-align: right;
         color: $colorText;
+
         &_span {
             margin-right: 37px;
             padding-left: 30px;
@@ -238,5 +240,34 @@ input[type='number']::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 1024px) {
+    .shopping-cart {
+        display: flex;
+        flex-direction: column;
 
+        &__product {
+            width: 734px;
+            display: flex;
+            justify-content: flex-start;
+        }
 
+        &__image {
+            margin-right: 41px;
+        }
+
+        &__x {
+            margin-left: 204px;
+        }
+
+        &__buttons {
+            justify-content: center;
+            gap: 48px;
+        }
+
+        .shopping-forms {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
