@@ -107,15 +107,18 @@ summary::-webkit-details-marker {
     display: flex;
     gap: 18px;
     padding-top: 12px;
-    &__details{
+
+    &__details {
         position: relative;
         z-index: 1;
     }
+
     &__summary {
         display: flex;
         align-items: center;
         gap: 10px;
     }
+
     &__heading {
         font-size: 14px;
         font-weight: 400;
@@ -124,6 +127,7 @@ summary::-webkit-details-marker {
         text-align: left;
         color: $colorText;
     }
+
     &__box {
         display: flex;
         flex-direction: column;
@@ -135,8 +139,9 @@ summary::-webkit-details-marker {
         position: absolute;
         left: -9px;
         top: 22px;
-        
+
     }
+
     &__check {
         display: flex;
         gap: 9px;
@@ -149,5 +154,43 @@ summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 1024px) {
+    .filter-sort {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
+@media (max-width: 767px) {
+    .filter {
+        position: absolute;
+    }
+    .filter[open] {
+        top: 67px;
+    }
 
+    .filter__summary {
+        padding-left: 6px;
+    }
+
+    .filter-sort {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    .filter__heading {
+        display: none;
+    }
+
+    .filter__svg {
+        width: 30px;
+        height: 25px;
+    }
+
+    .sort__heading {
+        font-size: 12px;
+    }
+}

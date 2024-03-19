@@ -6,10 +6,33 @@
     padding-bottom: 48px;
 }
 
+@media (max-width: 1024px) {
+    .catalog-box {
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        gap: 19px;
+        padding-bottom: 48px;
+    }
 
+    .product:last-of-type {
+        display: none;
+    }
+    
+}
 
+@media (max-width: 767px) {
+    .catalog-box {
+        display: grid;
+        grid-template-columns: repeat(1, 360px);
+        justify-content: center;
+        gap: 19px;
+        padding-bottom: 48px;
+    }
+    .registration-icon {
+        display: none;
+    }
 
-
-
-
-
+    .shopping_cart-icon {
+        display: none;
+    }
+}

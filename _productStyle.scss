@@ -265,6 +265,14 @@
     margin-top: 700px;
 }
 
+@media (max-width: 767px) {
+    .top-head {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
 
 
 
